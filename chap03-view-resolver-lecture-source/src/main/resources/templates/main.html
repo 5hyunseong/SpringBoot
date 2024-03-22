@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Chap03. View Resolver를 이용한 뷰 연결하기</h1>
+
+    <h3>문자열로 뷰 이름 반환하기</h3>
+    <button onclick="location.href='myString'">문자열로 뷰 이름 반환</button>
+
+    <h3>문자열로 redirect 하기</h3>
+    <button onclick="location.href='myStringRedirect'">문자열로 뷰 이름 반환하여 Redirect</button>
+
+    <h3>문자열로 뷰 이름을 반환하면서, flashAttribute 추가 하기</h3>
+    <button onclick="location.href='myStringRedirectAttribute'">문자열로 뷰 이름을 반환하면서 Redirect + flashAttribute 사용하기</button>
+    <script>
+        const flashMessage1 = `[[${ flashMessage1 }]]`;
+        console.log(flashMessage1);
+        if (flashMessage1) {
+            alert(flashMessage1);
+        }
+    </script>
+
+    <h3>ModelAndView로 뷰 이름 지정해서 반환하기</h3>
+    <button onclick="location.href='modelAndView'">ModelAndView로 뷰 이름 지정해서 반환받기</button>
+
+    <h3>ModelAndView로 Redirect 하기</h3>
+    <button onclick="location.href='modelAndViewRedirect'">ModelAndView로 뷰 이름 반환하여 Redirect하기</button>
+
+    <h3>ModelAndView로 뷰 이름을 반환하면서, flashAttribute 추가 하기</h3>
+    <button onclick="location.href='modelAndViewRedirectAttribute'">ModelAndView로 뷰 이름을 반환하면서 Redirect + flashAttribute 사용하기</button>
+    <script>
+        const flashMessage2 = `[[${ flashMessage2 }]]`;
+        console.log(flashMessage2);
+        if (flashMessage2) {
+            alert(flashMessage2);
+        }
+    </script>
+</body>
+</html>

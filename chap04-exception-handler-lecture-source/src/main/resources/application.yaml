@@ -1,0 +1,4 @@
+#spring.application.name=chap04-exception-handler-lecture-source
+spring:
+  application:
+    name: chap04-exception-handler-lecture-source
